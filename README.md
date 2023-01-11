@@ -1,1 +1,1 @@
-This is the pytorch version of lmtc-emnlp2020 
+if you want to train your model on EURLEX57K datasets with META-LMTC,please replace model.py and neural_network directory with your model.I try to use lean2learn to train Bert-LWAN model,but it is impractical(GPU out of memory).And I don't achieve the gradient accumlation trick the paper mention.You can use the other baselines. 
