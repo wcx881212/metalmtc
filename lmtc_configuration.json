@@ -1,0 +1,34 @@
+{
+  "task": {
+    "dataset": "EURLEX57K"
+  },
+  "model": {
+    "architecture": "BERT-LWAN",
+    "token_encoder": "bert",
+    "label_encoder": null,
+    "n_hidden_layers": 1,
+    "hidden_units_size": 100,
+    "dropout_rate": 0.1,
+    "word_dropout_rate": 0.00,
+    "lr": 2e-5,
+    "N": 40,
+    "K": 20,
+    "adaptation_steps": 1,
+    "alpha": 1e-3,
+    "beta": 1e-4,
+    "p": 0.5,
+    "num_task": 160,
+    "num_worker": 4,
+    "batch_size": 8,
+    "epochs": 20,
+    "token_encoding": "bert",
+    "embeddings": "law2vec.200d.txt",
+    "bert": "bert-base-uncased"
+  },
+  "sampling": {
+    "max_sequence_size": 512,
+    "max_label_size": 15,
+    "few_threshold": 50,
+    "evaluation@k": 10
+  }
+}
